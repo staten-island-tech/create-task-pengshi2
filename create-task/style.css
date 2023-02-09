@@ -1,4 +1,29 @@
-*body, 
-html {
-    background-color: aliceblue;
+body, 
+main, 
+* { 
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: aliceblue;
+  text-align: center;
+}
+
+
+.buttons-rock {
+  color: red;
+  scale:125%
+}
+
+.buttons-paper {
+ color: red;
+ scale: 125%;
+}
+
+.buttons-scissors {
+ color: red;
+ scale: 125%;
+}
+
+h1 {
+ color: green;
 }
