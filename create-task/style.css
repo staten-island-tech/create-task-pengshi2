@@ -9,21 +9,18 @@ main,
 }
 
 
-.buttons-rock {
-  color: red;
-  scale:125%
-}
 
-.buttons-paper {
- color: red;
- scale: 125%;
-}
-
-.buttons-scissors {
- color: red;
- scale: 125%;
-}
 
 h1 {
- color: green;
+  margin: auto;
+  width: 35%;
+  font-size: 2rem;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+img{
+  width: 5rem;
 }
