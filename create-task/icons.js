@@ -14,3 +14,10 @@ export const icons = [
     image: "https://nehalhazem.github.io/rockPaperScissors.io/img/scissors.png",
   },
 ];
+
+export const players = [
+  {
+    name: "Timothy the Genius",
+    image: "https://i1.sndcdn.com/artworks-000623298505-jqoikf-t500x500.jpg",
+  },
+];
