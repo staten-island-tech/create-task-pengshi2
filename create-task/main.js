@@ -1,7 +1,7 @@
 import "./style.css";
-import { icons } from "./icons.js";
-import { players } from "./icons.js";
-
+import { icons } from "./assets.js";
+import { Timothy } from "./assets.js";
+import { you } from "./assets.js";
 let computerScore = 1;
 
 let playerScore = 1;
@@ -13,7 +13,6 @@ const scissors = document.getElementById("buttonsscissors");
 const randomChoice = [rock, paper, scissors];
 
 let displayDiv = document.querySelector("#display");
-let displayDiv3 = document.querySelector("#display3");
 
 let randomNum = Math.floor(Math.random() * randomChoice.length);
 console.log(randomNum);
@@ -30,16 +29,14 @@ function display() {
   icons.forEach((image) => {
     displayDiv.insertAdjacentHTML(
       "beforeend",
-      `<img class = "icon" src = "${image.image}"> `
+      `<br> <img id = "${image.name}" src = "${image.image}"> `
     );
   });
 }
 
-display();
-
-function display3() {
-  players.forEach((image) => {
-    displayDiv3.insertAdjacentHTML(
+function displayTimothy() {
+  Timothy.forEach((image) => {
+    displayDiv.insertAdjacentHTML(
       "beforeend",
       `<h2 class = "name"> ${image.name}</h2> 
       <img class = "icon" src = "${image.image}"> `
@@ -47,4 +44,29 @@ function display3() {
   });
 }
 
-display3();
+function displayPlayer() {
+  you.forEach((image) => {
+    displayDiv.insertAdjacentHTML(
+      "beforeend",
+      `<h2 class = "name"> ${image.name}</h2> 
+      <img class = "icon" src = "${image.image}"> `
+    );
+  });
+}
+
+displayPlayer();
+display();
+displayTimothy();
+display();
+
+document.getElementById("rock").addEventListener("click", function () {
+  displayDiv.insertAdjacentHTML("beforeend", `<h3 class = "test> test </h3>`);
+});
+
+function kskskskks() {
+  let button = document.getElementById("button");
+  button.innerHTML = `<img src = "https://nehalhazem.github.io/rockPaperScissors.io/img/paper.png",
+  "`;
+}
+
+kskskskks();
