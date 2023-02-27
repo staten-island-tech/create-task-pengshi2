@@ -10,12 +10,29 @@
   /><title>Create Task </title>
   </head>
   <body>
-    <button id = "button"> Button </button>
     <h1 class = "header">  Rock Paper Scissors </h1>
+    <div class = "options"> 
+      <button class = "options-button" id = "rock"> Rock</button>
+      <button class = "options-button" id = "paper"> Paper </button>
+      <button class = "options-button" id = "scissors"> Scissors</button>
+    </div>
+    <div class="movesleft">Moves Left: 5</div>    
+    <div class="score">  
+      <div class="playerScore">
+          <h2>Player</h2>
+          <p class="p-score">0</p>
+
+      </div>       
+      <div class="computerScore">
+          <h2>Computer</h2>
+          <p class="c-score">0</p>
+
+      </div>
+  </div>
+ 
     <div class = "display" id = "display"></div>
     <br>
-    <div class = "display2" id = "display2"></div>
-    <br> 
+    <div class = "result"></div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
