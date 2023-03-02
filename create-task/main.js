@@ -1,3 +1,7 @@
+const DOM = {
+  history: document.getElementById("#history"),
+};
+
 const game = () => {
   let playerScore = 0;
   let computerScore = 0;
@@ -52,6 +56,7 @@ const game = () => {
         playerScore++;
 
         playerScoreBoard.innerHTML = playerScore;
+        history.push("Loss");
       }
     } else if (player === "scissors") {
       if (computer === "rock") {
@@ -60,6 +65,7 @@ const game = () => {
         computerScore++;
 
         computerScoreBoard.innerHTML = computerScore;
+        history.push("Loss");
       } else {
         result.innerHTML = "Player Won";
 
@@ -70,10 +76,10 @@ const game = () => {
     } else if (player === "paper") {
       if (computer === "scissors") {
         result.innerHTML = "Computer Won";
-
         computerScore++;
 
         computerScoreBoard.innerHTML = computerScore;
+        history.push("Loss");
       } else {
         result.innerHTML = "Player Won";
 
@@ -127,9 +133,17 @@ const game = () => {
 
 game();
 
-const history = [];
+// const history = [];
 
-const historyList = document.querySelector("#history");
-for (let i = 0; i < historyList.length; i++) {
-  historyList.innerHTML = `${result}`;
-}
+// for (let i = 0; i < history.length; i++) {
+//   if (i === 0) {
+//     DOM.history.innerHTML = "";
+//   } else {
+//     DOM.history.insertAdjacentHTML(
+//       "beforeend",
+//       `<div>
+//         Trial ${i + 1}: ${history[i]}
+//       </div>`
+//     );
+//   }
+// }
