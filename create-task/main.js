@@ -133,17 +133,17 @@ const game = () => {
 
 game();
 
-// const history = [];
+const history = [];
 
-// for (let i = 0; i < history.length; i++) {
-//   if (i === 0) {
-//     DOM.history.innerHTML = "";
-//   } else {
-//     DOM.history.insertAdjacentHTML(
-//       "beforeend",
-//       `<div>
-//         Trial ${i + 1}: ${history[i]}
-//       </div>`
-//     );
-//   }
-// }
+for (let i = 0; i < history.length; i++) {
+  if (i === 0) {
+    DOM.history.innerHTML = "";
+  } else {
+    DOM.history.insertAdjacentHTML(
+      "beforeend",
+      `<div>
+        Trial ${i + 1}: ${history[i]}
+      </div>`
+    );
+  }
+}
