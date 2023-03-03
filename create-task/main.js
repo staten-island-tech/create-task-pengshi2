@@ -45,13 +45,13 @@ const game = () => {
       result.innerHTML = "Tie";
     } else if (player === "rock") {
       if (computer === "paper") {
-        result.innerHTML = "Computer Won";
+        result.innerHTML = "Timothy Won";
 
         computerScore++;
 
         computerScoreBoard.innerHTML = computerScore;
       } else {
-        result.innerHTML = "Player Won";
+        result.innerHTML = "You Won";
 
         playerScore++;
 
@@ -60,14 +60,14 @@ const game = () => {
       }
     } else if (player === "scissors") {
       if (computer === "rock") {
-        result.textContent = "Computer Won";
+        result.textContent = "Timothy Won";
 
         computerScore++;
 
         computerScoreBoard.innerHTML = computerScore;
         history.push("Loss");
       } else {
-        result.innerHTML = "Player Won";
+        result.innerHTML = "You Won";
 
         playerScore++;
 
@@ -75,13 +75,13 @@ const game = () => {
       }
     } else if (player === "paper") {
       if (computer === "scissors") {
-        result.innerHTML = "Computer Won";
+        result.innerHTML = "Timothy Won";
         computerScore++;
 
         computerScoreBoard.innerHTML = computerScore;
         history.push("Loss");
       } else {
-        result.innerHTML = "Player Won";
+        result.innerHTML = "You Won";
 
         playerScore++;
 
@@ -105,13 +105,13 @@ const game = () => {
     if (playerScore > computerScore) {
       result.style.fontSize = "2rem";
 
-      result.innerText = "You beat Timothy!";
+      result.innerText = "You defeated Timothy! :D";
 
       result.style.color = "green";
     } else if (playerScore < computerScore) {
       result.style.fontSize = "2rem";
 
-      result.innerText = "Timothy beat you!";
+      result.innerText = "Timothy defeated you! D:";
 
       result.style.color = "red";
     } else {
