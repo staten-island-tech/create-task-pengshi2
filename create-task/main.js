@@ -37,22 +37,24 @@ const game = () => {
 
   const winner = (player, computer) => {
     const result = document.querySelector(".result");
+    const resultCPU = document.querySelector(".resultCPU");
     const playerScoreBoard = document.querySelector(".ps-score");
     const computerScoreBoard = document.querySelector(".cs-score");
     player = player.toLowerCase();
     computer = computer.toLowerCase();
     if (player === computer) {
       result.innerHTML = "Tie";
+      resultCPU.innerHTML = `Timothy chose ${player}`;
     } else if (player === "rock") {
       if (computer === "paper") {
-        result.innerHTML = "Computer Won";
-
+        result.innerHTML = "Timothy Won";
+        resultCPU.innerHTML = "Timothy chose paper";
         computerScore++;
 
         computerScoreBoard.innerHTML = computerScore;
       } else {
-        result.innerHTML = "Player Won";
-
+        result.innerHTML = "You Won";
+        resultCPU.innerHTML = "Timothy chose scissors";
         playerScore++;
 
         playerScoreBoard.innerHTML = playerScore;
@@ -60,29 +62,29 @@ const game = () => {
       }
     } else if (player === "scissors") {
       if (computer === "rock") {
-        result.textContent = "Computer Won";
-
+        result.textContent = "Timothy Won";
+        resultCPU.innerHTML = "Timothy chose rock";
         computerScore++;
 
         computerScoreBoard.innerHTML = computerScore;
         history.push("Loss");
       } else {
-        result.innerHTML = "Player Won";
-
+        result.innerHTML = "You Won";
+        resultCPU.innerHTML = "Timothy chose paper";
         playerScore++;
 
         playerScoreBoard.innerHTML = playerScore;
       }
     } else if (player === "paper") {
       if (computer === "scissors") {
-        result.innerHTML = "Computer Won";
+        result.innerHTML = "Timothy Won";
+        resultCPU.innerHTML = "Timothy chose scissors";
         computerScore++;
 
         computerScoreBoard.innerHTML = computerScore;
-        history.push("Loss");
       } else {
-        result.innerHTML = "Player Won";
-
+        result.innerHTML = "You Won";
+        resultCPU.innerHTML = "Timothy chose rock";
         playerScore++;
 
         playerScoreBoard.innerHTML = playerScore;
