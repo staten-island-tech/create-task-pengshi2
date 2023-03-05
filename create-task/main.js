@@ -48,45 +48,29 @@ const game = () => {
     } else if (player === "rock") {
       if (computer === "paper") {
         result.innerHTML = "Timothy Won";
-<<<<<<< HEAD
         resultCPU.innerHTML = "Timothy chose paper";
-=======
-
->>>>>>> beaed8bce7108cab871bc6d320b4b366c5237c7c
         computerScore++;
 
         computerScoreBoard.innerHTML = computerScore;
       } else {
         result.innerHTML = "You Won";
-<<<<<<< HEAD
         resultCPU.innerHTML = "Timothy chose scissors";
-=======
-
->>>>>>> beaed8bce7108cab871bc6d320b4b366c5237c7c
         playerScore++;
 
         playerScoreBoard.innerHTML = playerScore;
-        history.push("Loss");
+      
       }
     } else if (player === "scissors") {
       if (computer === "rock") {
         result.textContent = "Timothy Won";
-<<<<<<< HEAD
         resultCPU.innerHTML = "Timothy chose rock";
-=======
-
->>>>>>> beaed8bce7108cab871bc6d320b4b366c5237c7c
         computerScore++;
 
         computerScoreBoard.innerHTML = computerScore;
-        history.push("Loss");
+ 
       } else {
         result.innerHTML = "You Won";
-<<<<<<< HEAD
         resultCPU.innerHTML = "Timothy chose paper";
-=======
-
->>>>>>> beaed8bce7108cab871bc6d320b4b366c5237c7c
         playerScore++;
 
         playerScoreBoard.innerHTML = playerScore;
@@ -94,20 +78,13 @@ const game = () => {
     } else if (player === "paper") {
       if (computer === "scissors") {
         result.innerHTML = "Timothy Won";
-<<<<<<< HEAD
         resultCPU.innerHTML = "Timothy chose scissors";
-=======
->>>>>>> beaed8bce7108cab871bc6d320b4b366c5237c7c
         computerScore++;
 
         computerScoreBoard.innerHTML = computerScore;
       } else {
         result.innerHTML = "You Won";
-<<<<<<< HEAD
         resultCPU.innerHTML = "Timothy chose rock";
-=======
-
->>>>>>> beaed8bce7108cab871bc6d320b4b366c5237c7c
         playerScore++;
 
         playerScoreBoard.innerHTML = playerScore;
@@ -160,15 +137,4 @@ game();
 
 const history = [];
 
-for (let i = 0; i < history.length; i++) {
-  if (i === 0) {
-    DOM.history.innerHTML = "";
-  } else {
-    DOM.history.insertAdjacentHTML(
-      "beforeend",
-      `<div>
-        Trial ${i + 1}: ${history[i]}
-      </div>`
-    );
-  }
 }
