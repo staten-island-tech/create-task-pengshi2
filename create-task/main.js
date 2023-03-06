@@ -58,7 +58,6 @@ const game = () => {
         playerScore++;
 
         playerScoreBoard.innerHTML = playerScore;
-      
       }
     } else if (player === "scissors") {
       if (computer === "rock") {
@@ -67,7 +66,6 @@ const game = () => {
         computerScore++;
 
         computerScoreBoard.innerHTML = computerScore;
- 
       } else {
         result.innerHTML = "You Won";
         resultCPU.innerHTML = "Timothy chose paper";
@@ -136,5 +134,3 @@ const game = () => {
 game();
 
 const history = [];
-
-}
